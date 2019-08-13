@@ -1,0 +1,13 @@
+{
+  "directory": "src/main/webapp/bower_components",
+  "ignoredDependencies": [
+    "jquery-ui",
+	"jquery",
+    "font-awesome",
+    "holderjs",
+    "metisMenu",
+    "cldrjs",
+    "bootstrap-social",
+    "flot.tooltip"
+  ]
+}
