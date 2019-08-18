@@ -9,7 +9,7 @@ public enum MalihuScrollBarReferences
 {
 	MalihuScrollBarReferencesReference(
 	                   new JavascriptReference("MalihuCustomScrollbar",0.1d,"bower_components/malihuscrollbar/jquery.mCustomScrollbar.concat.min.js"),
-	                   new CSSReference("MalihuCustomScrollbar",0.1d,"bower_components/malihuscrollbar/jquery.mCustomScrollbar.min.css")),
+	                   new CSSReference("MalihuCustomScrollbar",0.1d,"bower_components/malihuscrollbar/jquery.mCustomScrollbar.css")),
 	;
 
 	/**

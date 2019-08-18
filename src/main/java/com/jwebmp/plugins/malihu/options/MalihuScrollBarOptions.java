@@ -143,7 +143,7 @@ public class MalihuScrollBarOptions<J extends MalihuScrollBarOptions<J>>
 	 * Default theme: "light"
 	 */
 	@JsonFormat(shape = STRING)
-	@JsonProperty("theme;")
+	@JsonProperty("theme")
 	private MalihuScrollbarThemes theme;
 	/**
 	 * Enable or disable applying scrollbar(s) on all elements matching the current selector, now and in the future.

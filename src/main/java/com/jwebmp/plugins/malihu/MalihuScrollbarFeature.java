@@ -22,7 +22,7 @@ public class MalihuScrollbarFeature<J extends MalihuScrollbarFeature<J>>
 	{
 		super("MalihuScrollbarFeature", component);
 		component.addFeature(this);
-		setOptions(new MalihuScrollBarOptions());
+		setOptions(new MalihuScrollBarOptions<>());
 	}
 
 	@Override
@@ -34,6 +34,6 @@ public class MalihuScrollbarFeature<J extends MalihuScrollbarFeature<J>>
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "mCustomScrollbar(" + getOptions() + ");");
+		addQuery(getComponent().getJQueryID() + "mCustomScrollbar(" + getOptions() + ");" + getNewLine());
 	}
 }
