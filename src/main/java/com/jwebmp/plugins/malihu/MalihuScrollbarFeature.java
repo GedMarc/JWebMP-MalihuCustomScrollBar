@@ -34,6 +34,18 @@ public class MalihuScrollbarFeature<J extends MalihuScrollbarFeature<J>>
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "mCustomScrollbar(" + getOptions() + ");" + getNewLine());
+		StringBuilder builder = new StringBuilder();
+		builder.append("if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {")
+		       .append(getNewLine());
+		builder.append(getComponent().getJQueryID())
+		       .append("mCustomScrollbar(")
+		       .append(getOptions())
+		       .append(");")
+		       .append(getNewLine());
+		builder.append(" $(\".sidebar-content\").addClass(\"desktop\");")
+		       .append(getNewLine());
+		builder.append("}")
+		       .append(getNewLine());
+		addQuery(builder);
 	}
 }
