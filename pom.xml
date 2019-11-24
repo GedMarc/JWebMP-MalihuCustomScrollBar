@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-       <groupId>com.jwebmp.plugins.jquery</groupId>
-    <artifactId>jwebmp-plugins-jquery-parent</artifactId>
+        <groupId>com.jwebmp.plugins.jquery</groupId>
+        <artifactId>jwebmp-plugins-jquery-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
@@ -22,24 +22,9 @@
     <dependencies>
         <dependency>
             <groupId>com.jwebmp.core</groupId>
-            <artifactId>jwebmp-core</artifactId><type>jar</type>
-            </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId><type>jar</type>
-            </dependency>
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId><type>jar</type>
-            </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId><type>jar</type>
-            </dependency>
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>jwebmp-core</artifactId>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     <scm>
         <url>https://github.com/GedMarc/JWebMP-MalihuCustomScrollBar.git</url>
