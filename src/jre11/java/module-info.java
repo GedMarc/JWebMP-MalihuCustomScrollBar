@@ -8,5 +8,8 @@ module com.jwebmp.plugins.malihuscrollbar {
 	requires com.fasterxml.jackson.databind;
 	requires com.fasterxml.jackson.annotation;
 
+	opens com.jwebmp.plugins.malihu to com.fasterxml.jackson.databind,com.google.guice,com.jwebmp.core;
+	opens com.jwebmp.plugins.malihu.options to com.fasterxml.jackson.databind,com.google.guice,com.jwebmp.core;
+
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.malihu.MalihuScrollBarPageConfigurator;
 }
