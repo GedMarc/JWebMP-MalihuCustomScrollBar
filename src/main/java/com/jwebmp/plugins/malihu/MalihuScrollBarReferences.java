@@ -8,8 +8,8 @@ public enum MalihuScrollBarReferences
 		implements IReferencePool
 {
 	MalihuScrollBarReferencesReference(
-	                   new JavascriptReference("MalihuCustomScrollbar",0.1d,"bower_components/malihuscrollbar/jquery.mCustomScrollbar.concat.min.js"),
-	                   new CSSReference("MalihuCustomScrollbar",0.1d,"bower_components/malihuscrollbar/jquery.mCustomScrollbar.css")),
+	                   new JavascriptReference("MalihuCustomScrollbar",3.113,"bower_components/malihuscrollbar/jquery.mCustomScrollbar.concat.min.js"),
+	                   new CSSReference("MalihuCustomScrollbar",3.113,"bower_components/malihuscrollbar/jquery.mCustomScrollbar.css")),
 	;
 
 	/**

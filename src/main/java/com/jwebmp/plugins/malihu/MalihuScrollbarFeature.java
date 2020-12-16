@@ -2,7 +2,9 @@ package com.jwebmp.plugins.malihu;
 
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.plugins.malihu.options.MalihuScrollBarOptions;
 
 /**
@@ -18,10 +20,10 @@ import com.jwebmp.plugins.malihu.options.MalihuScrollBarOptions;
 public class MalihuScrollbarFeature<J extends MalihuScrollbarFeature<J>>
 		extends Feature<GlobalFeatures, MalihuScrollBarOptions<?>, J>
 {
-	public MalihuScrollbarFeature(ComponentHierarchyBase component)
+	public MalihuScrollbarFeature(IComponentHierarchyBase<?,?> component)
 	{
 		super("MalihuScrollbarFeature", component);
-		component.addFeature(this);
+		component.asFeatureBase().addFeature(this);
 		setOptions(new MalihuScrollBarOptions<>());
 	}
 
@@ -37,7 +39,7 @@ public class MalihuScrollbarFeature<J extends MalihuScrollbarFeature<J>>
 		StringBuilder builder = new StringBuilder();
 		builder.append("if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {")
 		       .append(getNewLine());
-		builder.append(getComponent().getJQueryID())
+		builder.append(getComponent().asBase().getJQueryID())
 		       .append("mCustomScrollbar(")
 		       .append(getOptions())
 		       .append(");")
