@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.jquery</groupId>
     <artifactId>malihu-custom-scrollbar</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>Malihu Custom Scrollbar</name>
     <description>The JWebMP Implementation for the Malihu Custom Scrollbar</description>
     <url>https://github.com/GedMarc/JWebMP-MalihuCustomScrollBar</url>
