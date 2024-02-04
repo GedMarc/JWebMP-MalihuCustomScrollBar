@@ -1,6 +1,6 @@
 package com.jwebmp.plugins.malihu.enumerations;
 
-import static com.guicedee.guicedinjection.json.StaticStrings.*;
+import static com.guicedee.services.jsonrepresentation.json.StaticStrings.*;
 
 /**
  * http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/scrollbar_themes_demo.html
